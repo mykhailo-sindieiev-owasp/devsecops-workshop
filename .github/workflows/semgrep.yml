@@ -21,7 +21,7 @@ jobs:
     steps:
       # Fetch the repo so Semgrep has sources to scan.
       - name: Checkout
-        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       # On a PR the author can still fix things, so findings block the merge.
       # --error makes Semgrep exit non-zero when a finding is reported.
